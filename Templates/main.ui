@@ -1,0 +1,1101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>362</width>
+    <height>712</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>362</width>
+    <height>712</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>362</width>
+    <height>722</height>
+   </size>
+  </property>
+  <property name="sizeIncrement">
+   <size>
+    <width>362</width>
+    <height>712</height>
+   </size>
+  </property>
+  <property name="baseSize">
+   <size>
+    <width>362</width>
+    <height>712</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <weight>50</weight>
+    <bold>false</bold>
+   </font>
+  </property>
+  <property name="contextMenuPolicy">
+   <enum>Qt::DefaultContextMenu</enum>
+  </property>
+  <property name="windowTitle">
+   <string>Vestel Smart TV Remote Controller</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>img/logo.png</normaloff>img/logo.png</iconset>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <property name="tabShape">
+   <enum>QTabWidget::Rounded</enum>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="okButton">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>336</y>
+      <width>41</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="toolTip">
+     <string>Enter</string>
+    </property>
+    <property name="text">
+     <string>OK</string>
+    </property>
+    <property name="shortcut">
+     <string>Return</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="upButton">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>296</y>
+      <width>41</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="toolTip">
+     <string>Up</string>
+    </property>
+    <property name="text">
+     <string>↑</string>
+    </property>
+    <property name="shortcut">
+     <string>Up</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="downButton">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>376</y>
+      <width>41</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="toolTip">
+     <string>Down</string>
+    </property>
+    <property name="text">
+     <string>↓</string>
+    </property>
+    <property name="shortcut">
+     <string>Down</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="rightButton">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>336</y>
+      <width>41</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="toolTip">
+     <string>Right</string>
+    </property>
+    <property name="text">
+     <string>→</string>
+    </property>
+    <property name="shortcut">
+     <string>Right</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="leftButton">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>336</y>
+      <width>41</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="toolTip">
+     <string>Left</string>
+    </property>
+    <property name="text">
+     <string>←</string>
+    </property>
+    <property name="shortcut">
+     <string>Left</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn1">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>30</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="toolTip">
+     <string>1</string>
+    </property>
+    <property name="text">
+     <string>1</string>
+    </property>
+    <property name="shortcut">
+     <string>1</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn2">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>30</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="toolTip">
+     <string>2</string>
+    </property>
+    <property name="text">
+     <string>2</string>
+    </property>
+    <property name="shortcut">
+     <string>2</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn3">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>30</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="toolTip">
+     <string>3</string>
+    </property>
+    <property name="text">
+     <string>3</string>
+    </property>
+    <property name="shortcut">
+     <string>3</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn5">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>90</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="toolTip">
+     <string>5</string>
+    </property>
+    <property name="text">
+     <string>5</string>
+    </property>
+    <property name="shortcut">
+     <string>5</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn6">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>90</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="toolTip">
+     <string>6</string>
+    </property>
+    <property name="text">
+     <string>6</string>
+    </property>
+    <property name="shortcut">
+     <string>6</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn4">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>90</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="toolTip">
+     <string>4</string>
+    </property>
+    <property name="text">
+     <string>4</string>
+    </property>
+    <property name="shortcut">
+     <string>4</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn8">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>150</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="toolTip">
+     <string>8</string>
+    </property>
+    <property name="text">
+     <string>8</string>
+    </property>
+    <property name="shortcut">
+     <string>8</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn9">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>150</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="toolTip">
+     <string>9</string>
+    </property>
+    <property name="text">
+     <string>9</string>
+    </property>
+    <property name="shortcut">
+     <string>9</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn7">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>150</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="toolTip">
+     <string>7</string>
+    </property>
+    <property name="text">
+     <string>7</string>
+    </property>
+    <property name="shortcut">
+     <string>7</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn0">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>210</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="toolTip">
+     <string>0</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="shortcut">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="VolumeUpButton">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>276</y>
+      <width>41</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="toolTip">
+     <string>CTRL+Up</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>img/volume-up.png</normaloff>img/volume-up.png</iconset>
+    </property>
+    <property name="shortcut">
+     <string>V, Up</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="VolumeDownButton">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>366</y>
+      <width>41</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="toolTip">
+     <string>CTRL + Down</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>img/volume-down.png</normaloff>img/volume-down.png</iconset>
+    </property>
+    <property name="shortcut">
+     <string>V, Down</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ProgramDownButton">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>370</y>
+      <width>41</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>img/channeldown.png</normaloff>img/channeldown.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>64</width>
+      <height>64</height>
+     </size>
+    </property>
+    <property name="shortcut">
+     <string>P, Down</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ProgramUpButton">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>276</y>
+      <width>41</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>img/channelup.png</normaloff>img/channelup.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>64</width>
+      <height>64</height>
+     </size>
+    </property>
+    <property name="shortcut">
+     <string>P, Up</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="backButton">
+    <property name="geometry">
+     <rect>
+      <x>36</x>
+      <y>502</y>
+      <width>51</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Back</string>
+    </property>
+    <property name="shortcut">
+     <string>Backspace</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ExitButton">
+    <property name="geometry">
+     <rect>
+      <x>274</x>
+      <y>500</y>
+      <width>51</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Exit</string>
+    </property>
+    <property name="shortcut">
+     <string>Esc</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="muteButton">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>450</y>
+      <width>41</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>CTRL + M</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>img/mute.png</normaloff>img/mute.png</iconset>
+    </property>
+    <property name="shortcut">
+     <string>Ctrl+M</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="qMenuButton">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>120</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Q</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="powerButton">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>img/power.png</normaloff>img/power.png</iconset>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="changeButton">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>210</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>img/change.png</normaloff>img/change.png</iconset>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn3D">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>210</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>img/3D.png</normaloff>img/3D.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>32</width>
+      <height>32</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="sourceButton">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>10</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>img/source.png</normaloff>img/source.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>32</width>
+      <height>32</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="menuButton">
+    <property name="geometry">
+     <rect>
+      <x>24</x>
+      <y>450</y>
+      <width>71</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Menu</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="infoButton">
+    <property name="geometry">
+     <rect>
+      <x>265</x>
+      <y>450</y>
+      <width>71</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>I</string>
+    </property>
+    <property name="text">
+     <string>Info</string>
+    </property>
+    <property name="shortcut">
+     <string>I</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="internetButton">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>120</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>img/internet.png</normaloff>img/internet.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>32</width>
+      <height>32</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="playButton">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>560</y>
+      <width>32</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>img/play.png</normaloff>img/play.png</iconset>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pauseButton">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>560</y>
+      <width>32</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>img/pause.png</normaloff>img/pause.png</iconset>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="stopButton">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>560</y>
+      <width>32</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>img/stop.png</normaloff>img/stop.png</iconset>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="recButton">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>560</y>
+      <width>32</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>img/rec.png</normaloff>img/rec.png</iconset>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="forwardButton">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>560</y>
+      <width>32</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>img/forward.png</normaloff>img/forward.png</iconset>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="backwardButton">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>560</y>
+      <width>32</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>img/backward.png</normaloff>img/backward.png</iconset>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="mediaButton">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>500</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>img/media.png</normaloff>img/media.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>32</width>
+      <height>32</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="subtitleButton">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>610</y>
+      <width>75</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Subtitle</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="languageButton">
+    <property name="geometry">
+     <rect>
+      <x>143</x>
+      <y>610</y>
+      <width>75</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Language</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="epgButton">
+    <property name="geometry">
+     <rect>
+      <x>247</x>
+      <y>610</y>
+      <width>75</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>EPG</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="redButton">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>652</y>
+      <width>21</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>img/red.png</normaloff>img/red.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>16</width>
+      <height>16</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="yellowButton">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>652</y>
+      <width>21</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>img/yellow.png</normaloff>img/yellow.png</iconset>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="blueButton">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>652</y>
+      <width>21</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>img/blue.png</normaloff>img/blue.png</iconset>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="greenButton">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>652</y>
+      <width>21</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>img/green.png</normaloff>img/green.png</iconset>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="NetflixButton">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>190</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>img/netflix.png</normaloff>img/netflix.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>32</width>
+      <height>32</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="YouTubeButton">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>190</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>img/youtube.png</normaloff>img/youtube.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>64</width>
+      <height>64</height>
+     </size>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>362</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="nativeMenuBar">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <action name="actionSettings">
+   <property name="text">
+    <string>Settings</string>
+   </property>
+  </action>
+  <action name="actionQuit">
+   <property name="text">
+    <string>Quit</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
