@@ -57,7 +57,7 @@ class SettingsDialog(QDialog):
                 self.close()
             else:
                 QMessageBox().setIcon(QMessageBox.Information)
-                QMessageBox.information(self, "Warning", "TV is not accessible, please check entered IP address !")
+                QMessageBox.information(self, "Warning", "TV is not accessible, please check entered IP address!")
         else:
             QMessageBox().setIcon(QMessageBox.Information)
             QMessageBox.information(self, "Warning", "IP address is not valid!")

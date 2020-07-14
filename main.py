@@ -1,7 +1,7 @@
 import sys
-
 from PyQt5 import QtWidgets, uic
-
+from PyQt5.QtWidgets import QMessageBox
+import VestelTV
 import db
 import settingsDialog
 from VestelTV import VestelRemoteController
@@ -172,6 +172,14 @@ class Ui(QtWidgets.QMainWindow):
         ip_address = db.select_ip()
         if ip_address is None or ip_address == "":
             settingsDialog.SettingsDialog(self).exec()
+        else:
+            if VestelTV.tv_accessible_check(ip_address):
+                db.insert_or_change_ip(ip_address)
+                self.close()
+            else:
+                QMessageBox().setIcon(QMessageBox.Information)
+                QMessageBox.information(self, "Warning", "TV is not accessible, please check your TV or network!")
+                settingsDialog.SettingsDialog(self).exec()
 
     @staticmethod
     def quitApplication():
