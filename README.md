@@ -1,6 +1,6 @@
 # Remote control application for Vestel Smart TV
 
-![alt text](https://github.com/niyazialpay/VestelSmartTVRemoteController/blob/master/screenshot.jpg?raw=true)
+![Vestel Smart TV Remote Controller](https://github.com/niyazialpay/VestelSmartTVRemoteController/blob/master/screenshot.jpg?raw=true)
 
 Detailed Description
 
