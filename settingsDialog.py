@@ -67,4 +67,8 @@ class SettingsDialog(QDialog):
         if ip_address is None or ip_address == "":
             pass
         else:
-            self.close()
+            if VestelTV.tv_accessible_check(ip_address):
+                self.close()
+            else:
+                QMessageBox().setIcon(QMessageBox.Information)
+                QMessageBox.information(self, "Warning", "TV is not accessible, please check entered IP address!")

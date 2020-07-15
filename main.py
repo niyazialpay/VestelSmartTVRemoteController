@@ -177,9 +177,12 @@ class Ui(QtWidgets.QMainWindow):
                 db.insert_or_change_ip(ip_address)
                 self.close()
             else:
-                QMessageBox().setIcon(QMessageBox.Information)
-                QMessageBox.information(self, "Warning", "TV is not accessible, please check your TV or network!")
-                settingsDialog.SettingsDialog(self).exec()
+                self.messageBox()
+
+    def messageBox(self):
+        QMessageBox().setIcon(QMessageBox.Information)
+        QMessageBox.information(self, "Warning", "TV is not accessible, please check your TV or network!")
+        settingsDialog.SettingsDialog(self).exec()
 
     @staticmethod
     def quitApplication():

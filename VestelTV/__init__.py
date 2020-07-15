@@ -11,8 +11,7 @@ def call_key_code(key_code):
         requests.post('http://' + db.select_ip() + ':56791/apps/vr/remote', data=xml, headers=headers)
         return True
     except requests.exceptions.ConnectionError:
-        QMessageBox().setIcon(QMessageBox.Warning)
-        QMessageBox().Warning("Warning", "TV is not accessible!")
+        return False
 
 
 def call_application(app):
@@ -21,8 +20,7 @@ def call_application(app):
         requests.post('http://' + db.select_ip() + ':56791/apps/' + app, headers=headers)
         return True
     except requests.exceptions.ConnectionError:
-        QMessageBox().setIcon(QMessageBox.Warning)
-        QMessageBox().Warning("Warning", "TV is not accessible!")
+        return False
 
 
 def tv_accessible_check(IP):
