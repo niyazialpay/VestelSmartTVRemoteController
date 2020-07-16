@@ -146,6 +146,9 @@ class Ui(QtWidgets.QMainWindow):
         self.button = self.findChild(QtWidgets.QPushButton, 'epgButton')
         self.button.clicked.connect(tv.epgButton)
 
+        self.button = self.findChild(QtWidgets.QPushButton, 'teletextButton')
+        self.button.clicked.connect(tv.teletextButton)
+
         self.button = self.findChild(QtWidgets.QPushButton, 'redButton')
         self.button.clicked.connect(tv.redButton)
 
@@ -174,8 +177,7 @@ class Ui(QtWidgets.QMainWindow):
             settingsDialog.SettingsDialog(self).exec()
         else:
             if VestelTV.tv_accessible_check(ip_address):
-                db.insert_or_change_ip(ip_address)
-                self.close()
+                pass
             else:
                 self.messageBox()
 

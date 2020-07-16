@@ -193,6 +193,10 @@ class VestelRemoteController:
         call_key_code(1047)
 
     @staticmethod
+    def teletextButton():
+        call_key_code(1255)
+
+    @staticmethod
     def redButton():
         call_key_code(1055)
 
