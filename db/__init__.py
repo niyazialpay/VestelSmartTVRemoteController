@@ -3,7 +3,7 @@ import sqlite3
 
 dir_path = os.path.dirname(os.path.realpath(__file__))
 
-db_file = dir_path + "/system.db"
+db_file = dir_path + "/../system.db"
 
 connection = sqlite3.connect(db_file)
 connection.row_factory = sqlite3.Row
