@@ -47,7 +47,29 @@
   <property name="styleSheet">
    <string notr="true">QDialog{
 background-color:#5B5B5B;
-}</string>
+}
+QLineEdit{
+border-radius:5px;padding:5px;background-color:#A3A1A1;color:#000
+}
+QPushButton#saveButton{
+border-radius:5px;background-color:#005DB5;color:#CBCBCB
+}
+QPushButton:hover#saveButton{
+background-color:#0291E3;color:#F3F3F3
+}
+QPushButton:pressed#saveButton{
+background-color:#4E94BD;color:#CFCFCF
+}
+QPushButton#cancelButton{
+border-radius:5px;background-color:#B50000;color:#CBCBCB
+}
+QPushButton:hover#cancelButton{
+;background-color:#E50303;color:#F3F3F3
+}
+QPushButton:pressed#cancelButton{
+;background-color:#C75555;color:#CFCFCF
+}
+</string>
   </property>
   <property name="sizeGripEnabled">
    <bool>false</bool>
@@ -68,16 +90,7 @@ background-color:#5B5B5B;
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">QPushButton#saveButton{
-border-radius:5px;background-color:#005DB5;color:#CBCBCB
-}
-QPushButton:hover#saveButton{
-background-color:#0291E3;color:#F3F3F3
-}
-QPushButton:pressed#saveButton{
-background-color:#4E94BD;color:#CFCFCF
-}
-</string>
+    <string notr="true"/>
    </property>
    <property name="text">
     <string>Save</string>
@@ -96,16 +109,7 @@ background-color:#4E94BD;color:#CFCFCF
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">QPushButton#cancelButton{
-border-radius:5px;background-color:#B50000;color:#CBCBCB
-}
-QPushButton:hover#cancelButton{
-;background-color:#E50303;color:#F3F3F3
-}
-QPushButton:pressed#cancelButton{
-;background-color:#C75555;color:#CFCFCF
-}
-</string>
+    <string notr="true"/>
    </property>
    <property name="text">
     <string>Cancel</string>
@@ -124,7 +128,7 @@ QPushButton:pressed#cancelButton{
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">border-radius:5px;padding:5px;background-color:#A3A1A1;color:#000</string>
+    <string notr="true"/>
    </property>
    <property name="inputMask">
     <string/>

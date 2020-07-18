@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>362</width>
-    <height>712</height>
+    <height>714</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -19,25 +19,25 @@
   <property name="minimumSize">
    <size>
     <width>362</width>
-    <height>712</height>
+    <height>714</height>
    </size>
   </property>
   <property name="maximumSize">
    <size>
     <width>362</width>
-    <height>712</height>
+    <height>714</height>
    </size>
   </property>
   <property name="sizeIncrement">
    <size>
     <width>362</width>
-    <height>712</height>
+    <height>714</height>
    </size>
   </property>
   <property name="baseSize">
    <size>
     <width>362</width>
-    <height>712</height>
+    <height>714</height>
    </size>
   </property>
   <property name="font">
@@ -64,8 +64,11 @@
 background-color:#5B5B5B;
 }
 QMenuBar{
-background-color:#757575
+background-color:#757575;
 } 
+QMenu{
+background-color:#838383;
+}
 QPushButton{
 background-color:#888787;
 border-radius:5px
@@ -75,12 +78,64 @@ background-color:#B0B0B0;
 }
 QPushButton:pressed{
 background-color:#A4A4A4;
+}
+QPushButton#NetflixButton{
+background-color:#2E2E2E
+}
+QPushButton:hover#NetflixButton{
+background-color:#000
+}
+QPushButton:pressed#NetflixButton{
+background-color:#343434
+}
+QPushButton#redButton{
+border:0px;background-color:transparent;
+}
+QPushButton:hover#redButton{
+background-color:red;
+border-radius:10px
+}
+QPushButton:pressed#redButton{
+background-color:transparent;
+}
+QPushButton#yellowButton{
+border:0px;background-color:transparent;
+}
+QPushButton:hover#yellowButton{
+background-color:yellow;
+border-radius:10px
+}
+QPushButton:pressed#yellowButton{
+background-color:transparent;
+}
+QPushButton#blueButton{
+border:0px;background-color:transparent;
+}
+QPushButton:hover#blueButton{
+background-color:#0072ff;
+border-radius:10px
+}
+QPushButton:pressed#blueButton{
+background-color:transparent;
+}
+QPushButton#greenButton{
+border:0px;background-color:transparent;
+}
+QPushButton:hover#greenButton{
+background-color:#00ff12;
+border-radius:10px
+}
+QPushButton:pressed#greenButton{
+background-color:transparent;
 }</string>
   </property>
   <property name="tabShape">
    <enum>QTabWidget::Rounded</enum>
   </property>
   <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
    <widget class="QPushButton" name="okButton">
     <property name="geometry">
      <rect>
@@ -981,16 +1036,7 @@ background-color:#A4A4A4;
      <bool>false</bool>
     </property>
     <property name="styleSheet">
-     <string notr="true">QPushButton#redButton{
-border:0px;background-color:transparent;
-}
-QPushButton:hover#redButton{
-background-color:red;
-border-radius:10px
-}
-QPushButton:pressed#redButton{
-background-color:transparent;
-}</string>
+     <string notr="true"/>
     </property>
     <property name="text">
      <string/>
@@ -1016,16 +1062,7 @@ background-color:transparent;
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">QPushButton#yellowButton{
-border:0px;background-color:transparent;
-}
-QPushButton:hover#yellowButton{
-background-color:yellow;
-border-radius:10px
-}
-QPushButton:pressed#yellowButton{
-background-color:transparent;
-}</string>
+     <string notr="true"/>
     </property>
     <property name="text">
      <string/>
@@ -1045,16 +1082,7 @@ background-color:transparent;
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">QPushButton#blueButton{
-border:0px;background-color:transparent;
-}
-QPushButton:hover#blueButton{
-background-color:#0072ff;
-border-radius:10px
-}
-QPushButton:pressed#blueButton{
-background-color:transparent;
-}</string>
+     <string notr="true"/>
     </property>
     <property name="text">
      <string/>
@@ -1074,16 +1102,7 @@ background-color:transparent;
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">QPushButton#greenButton{
-border:0px;background-color:transparent;
-}
-QPushButton:hover#greenButton{
-background-color:#00ff12;
-border-radius:10px
-}
-QPushButton:pressed#greenButton{
-background-color:transparent;
-}</string>
+     <string notr="true"/>
     </property>
     <property name="text">
      <string/>
@@ -1173,6 +1192,46 @@ background-color:transparent;
    </widget>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>362</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_Options">
+    <property name="title">
+     <string>&amp;Options</string>
+    </property>
+    <addaction name="actionSettings"/>
+    <addaction name="separator"/>
+    <addaction name="actionQuit"/>
+   </widget>
+   <addaction name="menu_Options"/>
+  </widget>
+  <action name="actionSettings">
+   <property name="icon">
+    <iconset>
+     <normaloff>img/settings.png</normaloff>img/settings.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Settings</string>
+   </property>
+  </action>
+  <action name="actionQuit">
+   <property name="icon">
+    <iconset>
+     <normaloff>img/quit.png</normaloff>img/quit.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Quit</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::QuitRole</enum>
+   </property>
+  </action>
  </widget>
  <resources/>
  <connections/>

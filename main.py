@@ -16,12 +16,8 @@ class Ui(QtWidgets.QMainWindow):
 
         uic.loadUi("Templates/main.ui", self)
 
-        menu_bar = self.menuBar()
-        option_menu = menu_bar.addMenu('&Options')
-        settings_action = QtWidgets.QAction('&Settings', self)
-        close_action = QtWidgets.QAction('&Quit', self)
-        option_menu.addAction(settings_action)
-        option_menu.addAction(close_action)
+        settings_action = self.findChild(QtWidgets.QAction, 'actionSettings')
+        close_action = self.findChild(QtWidgets.QAction, 'actionQuit')
 
         settings_action.triggered.connect(self.openSettingsDialog)
         close_action.triggered.connect(self.quitApplication)
