@@ -1,3 +1,5 @@
+import sys
+
 from PyQt5 import QtWidgets, uic, QtCore
 from PyQt5.QtWidgets import QDialog, QMessageBox
 import VestelTV
@@ -41,8 +43,12 @@ class SettingsDialog(QDialog):
         self.button = self.findChild(QtWidgets.QPushButton, 'cancelButton')
         self.button.clicked.connect(self.closeAction)
 
+        self.button = self.findChild(QtWidgets.QPushButton, 'exitButton')
+        self.button.clicked.connect(sys.exit)
+
         self.button = self.findChild(QtWidgets.QPushButton, 'saveButton')
         self.button.clicked.connect(self.saveSettings)
+
         self.input = self.findChild(QtWidgets.QLineEdit, 'txtIP')
 
         ip_address = db.select_ip()

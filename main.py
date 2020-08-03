@@ -2,8 +2,10 @@ import sys
 from PyQt5 import QtWidgets, uic
 from PyQt5.QtWidgets import QMessageBox
 import VestelTV
+import channelDialog
 import db
 import settingsDialog
+import volumeDialog
 from VestelTV import VestelRemoteController
 
 
@@ -17,10 +19,22 @@ class Ui(QtWidgets.QMainWindow):
         uic.loadUi("Templates/main.ui", self)
 
         settings_action = self.findChild(QtWidgets.QAction, 'actionSettings')
-        close_action = self.findChild(QtWidgets.QAction, 'actionQuit')
-
         settings_action.triggered.connect(self.openSettingsDialog)
-        close_action.triggered.connect(self.quitApplication)
+
+        close_action = self.findChild(QtWidgets.QAction, 'actionQuit')
+        close_action.triggered.connect(sys.exit)
+
+        channel_action = self.findChild(QtWidgets.QAction, 'actionChannel')
+        channel_action.triggered.connect(self.openChannelDialog)
+
+        netflix_action = self.findChild(QtWidgets.QAction, 'actionNetflix')
+        netflix_action.triggered.connect(tv.NetflixButton)
+
+        youtube_action = self.findChild(QtWidgets.QAction, 'actionYouTube')
+        youtube_action.triggered.connect(tv.YouTubeButton)
+
+        volume_action = self.findChild(QtWidgets.QAction, 'actionVolume')
+        volume_action.triggered.connect(self.openVolumeDialog)
 
         self.button = self.findChild(QtWidgets.QPushButton, 'btn1')
         self.button.clicked.connect(tv.btnOne)
@@ -182,12 +196,14 @@ class Ui(QtWidgets.QMainWindow):
         QMessageBox.information(self, "Warning", "TV is not accessible, please check your TV or network!")
         settingsDialog.SettingsDialog(self).exec()
 
-    @staticmethod
-    def quitApplication():
-        sys.exit()
-
     def openSettingsDialog(self):
         settingsDialog.SettingsDialog(self).exec()
+
+    def openChannelDialog(self):
+        channelDialog.channelDialog(self).exec()
+
+    def openVolumeDialog(self):
+        volumeDialog.volumeDialog(self).exec()
 
 
 if __name__ == "__main__":
