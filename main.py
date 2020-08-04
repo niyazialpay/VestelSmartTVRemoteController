@@ -1,6 +1,7 @@
 import sys
-from PyQt5 import QtWidgets, uic
-from PyQt5.QtWidgets import QMessageBox
+from PyQt5 import QtWidgets, uic, QtCore, QtGui
+from PyQt5.QtGui import QCursor, QIcon
+from PyQt5.QtWidgets import QMessageBox, QMenu
 import VestelTV
 import channelDialog
 import db
@@ -180,6 +181,34 @@ class Ui(QtWidgets.QMainWindow):
         self.show()
 
         self.checkConfig()
+
+    def contextMenuEvent(self, event):
+        contextMenu = QMenu(self)
+        contextMenu.setCursor(QCursor(QtCore.Qt.PointingHandCursor))
+
+        volume = contextMenu.addAction("Volume")
+        volume.setIcon(QtGui.QIcon('Templates/img/volume-up.png'))
+
+        goto_channel = contextMenu.addAction("Go to channel")
+        goto_channel.setIcon(QtGui.QIcon('Templates/img/channel.png'))
+
+        settings = contextMenu.addAction("Settings")
+        settings.setIcon(QtGui.QIcon('Templates/img/settings.png'))
+
+        quitAct = contextMenu.addAction("Quit")
+        quitAct.setIcon(QtGui.QIcon('Templates/img/quit.png'))
+
+        action = contextMenu.exec_(self.mapToGlobal(event.pos()))
+        if action == quitAct:
+            sys.exit()
+        elif action == volume:
+            self.openVolumeDialog()
+        elif action == settings:
+            self.openSettingsDialog()
+        elif action == goto_channel:
+            self.openChannelDialog()
+        else:
+            pass
 
     def checkConfig(self):
         ip_address = db.select_ip()
