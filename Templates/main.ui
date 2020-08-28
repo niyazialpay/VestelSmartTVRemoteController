@@ -65,6 +65,7 @@ background-color:#5B5B5B;
 }
 QMenuBar{
 background-color:#757575;
+color:#000000;
 } 
 QMenu{
 background-color:#838383;
