@@ -71,7 +71,8 @@ background-color:#838383;
 }
 QPushButton{
 background-color:#888787;
-border-radius:5px
+border-radius:5px;
+color:#000000
 }
 QPushButton:hover{
 background-color:#B0B0B0;
@@ -1027,7 +1028,7 @@ background-color:transparent;
     <property name="geometry">
      <rect>
       <x>110</x>
-      <y>652</y>
+      <y>658</y>
       <width>21</width>
       <height>20</height>
      </rect>
@@ -1056,7 +1057,7 @@ background-color:transparent;
     <property name="geometry">
      <rect>
       <x>150</x>
-      <y>652</y>
+      <y>658</y>
       <width>21</width>
       <height>20</height>
      </rect>
@@ -1076,7 +1077,7 @@ background-color:transparent;
     <property name="geometry">
      <rect>
       <x>190</x>
-      <y>652</y>
+      <y>658</y>
       <width>21</width>
       <height>20</height>
      </rect>
@@ -1096,7 +1097,7 @@ background-color:transparent;
     <property name="geometry">
      <rect>
       <x>230</x>
-      <y>652</y>
+      <y>658</y>
       <width>21</width>
       <height>20</height>
      </rect>
@@ -1190,11 +1191,6 @@ background-color:transparent;
      </size>
     </property>
    </widget>
-  </widget>
-  <widget class="QStatusBar" name="statusbar">
-   <property name="sizeGripEnabled">
-    <bool>false</bool>
-   </property>
   </widget>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">
