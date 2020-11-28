@@ -116,10 +116,10 @@ class Ui(QtWidgets.QMainWindow):
         self.button.clicked.connect(tv.ThreeD)
 
         self.button = self.findChild(QtWidgets.QPushButton, 'menuButton')
-        self.button.clicked.connect(tv.ThreeD)
+        self.button.clicked.connect(tv.OpenMenu())
 
         self.button = self.findChild(QtWidgets.QPushButton, 'sourceButton')
-        self.button.clicked.connect(tv.ThreeD)
+        self.button.clicked.connect(tv.SourceButton())
 
         self.button = self.findChild(QtWidgets.QPushButton, 'infoButton')
         self.button.clicked.connect(tv.InfoButton)
